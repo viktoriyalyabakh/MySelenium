@@ -17,7 +17,7 @@ public class facebookValidation {
             WebElement passworBox = driver.findElement(By.id("passContainer"));
             WebElement logInButton = driver.findElement(By.xpath("//button[starts-with(@id, 'u_0_5_')]"));
             WebElement forgotPasswordLink = driver.findElement(By.cssSelector("div[class='_6ltj']"));
-            WebElement createNewAccountButton = driver.findElement(By.xpath("//a[starts-with(@id,'u_0_0_')]"));
+            WebElement createNewAccountButton = driver.findElement(By.cssSelector("a[id*='u_0_0_']"));
 
             if(driver.getTitle().equals("Facebook - log in or sign up")) System.out.println("Title validation is PASSED");
             else System.out.println("Title validation is FAILED");
